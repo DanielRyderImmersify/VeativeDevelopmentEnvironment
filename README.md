@@ -1,39 +1,44 @@
 # How to Run
 
 -   Install Node.js version 16.14.2 (or above)
--   Verify your installation in the terminal with the commands 'node --version' and 'npm -v'
+-   Verify your installation in the terminal with the commands `node --version` and `npm -v`
 -   Clone the project locally
 -   Open the folder in VSCode or alternative IDE
 -   If using VSCode recommended extensions are ESLint, GitHub Pull Requests, npm, npm intellisense, Path Intenllisense, Prettier, React Native Tools
 -   Ask for the .gitignore file and .env and add them to the root of the project
 -   If you are setting up this project for the first time you will need to fill out the variables within the .env file using the credentials from Playfab and/or the S3 bucket that is going to be used for development
 -   Open the terminal (Ctrl+~) or (Ctrl+P and then type terminal)
--   npm run install-all
--   npm run dev
+-   `npm run install-all`
+-   `npm run dev`
 
 # How to update to latest version
 
--   git pull
--   npm run install-all
+### `git pull`
+
+### `npm run install-all`
 
 # Where to develop
 
--   Front end (React) development should take place in src/components/Veative and any routes can be added to App.js (uppercase not to be mistaken with app.js)
--   If any routes need to be added to the backend (NodeJS) this can be done in node/routes and the route can be added to app.js (lowercase app not to be mistaken with App.js)
+-   Front end (React) development should take place in `src/components/Veative` and any routes can be added to `App.js` (uppercase not to be mistaken with app.js)
+-   If any routes need to be added to the backend (NodeJS) this can be done in `node/routes` and the route can be added to `app.js` (lowercase app not to be mistaken with App.js)
 
 # How to push to Git
 
--   git checkout (your working branch)
--   git pull
--   git add .
--   git commit -am "message"
--   git push origin
+### `git checkout` (your working branch)
+
+### `git pull`
+
+### `git add .`
+
+### `git commit -am "message"`
+
+### `git push origin`
 
 ## Available Scripts
 
 In the project directory, you can run:
 
-### npm run dev
+### `npm run dev`
 
 Runs the server and client together
 Open [https://localhost:3000](https://localhost:3000) to view it in the browser.
