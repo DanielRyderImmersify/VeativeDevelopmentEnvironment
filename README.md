@@ -13,9 +13,9 @@
 
 # How to update to latest version
 
-### `git pull`
+-   `git pull`
 
-### `npm run install-all`
+-   `npm run install-all`
 
 # Where to develop
 
@@ -24,15 +24,15 @@
 
 # How to push to Git
 
-### `git checkout` (your working branch)
+-   `git checkout` (your working branch)
 
-### `git pull`
+-   `git pull`
 
-### `git add .`
+-   `git add .`
 
-### `git commit -am "message"`
+-   `git commit -am "message"`
 
-### `git push origin`
+-   `git push origin`
 
 ## Available Scripts
 
