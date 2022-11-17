@@ -20,6 +20,7 @@
 # Where to develop
 
 -   Front end (React) development should take place in `src/components/Veative` and any routes can be added to `App.js` (uppercase not to be mistaken with app.js)
+-   Front end (scss) development should take place in `src/components/SCSS/veativeStyles.scss` and can be complied into css using a live saas compiler extension
 -   If any routes need to be added to the backend (NodeJS) this can be done in `node/routes` and the route can be added to `app.js` (lowercase app not to be mistaken with App.js)
 
 # How to push to Git
