@@ -83,6 +83,20 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
+## HTML
+Use semantic HTML for markups.<br/>
+Add `alt` tag for all `img` components.<br/>
+Bootstrap 5 is used for responsive framework, you can use Bootstrap classes if you want.<br/>
+Everything should be responsive and tested in various devices.<br/>
+
+## Styling
+Use SCSS for styling.<br />
+You can use https://marketplace.visualstudio.com/items?itemName=glenn2223.live-sass for compiling SCSS files.<br/>
+Do not edit/delete any existing stylesheets(both CSS&SCSS).<br />
+Use separate stylesheets for any styling but can import common stylesheets.<br />
+Use proper classnames which are relevant to the components.<br />
+Add comments on starting and ending of each styling sections for easy understanding.
+
 ### Code Splitting
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
