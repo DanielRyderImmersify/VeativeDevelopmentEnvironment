@@ -1,0 +1,46 @@
+/**** Breadcrumb *****/
+.breadcrumb_des {
+  padding: 5px 15px;
+  border-bottom: 1px solid #EBEBEB;
+  display: flex;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  align-items: center;
+  background: #f7f8fa;
+}
+.breadcrumb_des .back_btn {
+  font-size: 1.7em;
+  color: #7A7A7A;
+  border: none;
+  background: none;
+  display: inline-block;
+}
+.breadcrumb_des ul {
+  margin-bottom: 0;
+  padding-left: 5px;
+}
+.breadcrumb_des ul li {
+  list-style: none;
+  font-size: 14px;
+  margin: 0 7px;
+  float: left;
+}
+.breadcrumb_des ul li::after {
+  content: "\f105";
+  font: normal normal normal 14px/1 FontAwesome;
+  margin-left: 15px;
+}
+.breadcrumb_des ul li:last-child button {
+  font-weight: 600;
+  color: #161616;
+}
+.breadcrumb_des ul li:last-child::after {
+  display: none;
+}
+.breadcrumb_des ul li button {
+  color: #767676;
+  text-align: left;
+}
+
+/**** Breadcrumb *****//*# sourceMappingURL=common.css.map */

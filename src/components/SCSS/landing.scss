@@ -124,6 +124,12 @@ a.btn_common{
     position: relative;
     min-height: 500px;
 
+    
+.thumbnail_modl{
+    position: absolute;
+    z-index: 0;
+}
+
     .landing_model{
         position: absolute;
         height: 100%;
@@ -192,6 +198,7 @@ a.btn_common{
     }
 }
 
+
 .btn_areas {
     text-align: right;
     display: flex;
@@ -217,7 +224,6 @@ a.btn_common{
     margin-top: 100px;
 
     .l_main_heading {
-        min-height: 600px;
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -880,10 +886,12 @@ section.what_prof {
             height: 100%;
             width: 100%;
             transition: .2s all ease;
+            pointer-events: none;
         }
         .tab-content>.active {
             display: block;
             opacity: 1;
+            pointer-events: all;
         }
 
         .nav-item{
@@ -1019,6 +1027,7 @@ section.what_prof {
         .p_img {
             margin-bottom: 50px;
 
+
             img{
                 max-width: 100%;
                 max-height: 100px;
@@ -1026,10 +1035,11 @@ section.what_prof {
                 object-fit: contain;
                 transition: .2s all ease;
 
-                &:hover{
-                    transform: scale(1.05, 1.05);
+                    &:hover{
+                        transform: scale(1.05, 1.05);
+                    }
                 }
-            }
+            
         }
 }
 
@@ -1347,6 +1357,10 @@ footer{
         margin: auto;
         text-align: center;
         transition: .2s all ease;
+        
+        a{
+            display: inline-block;
+       
 
                 &:hover{
                     transform: scale(1.03, 1.03);
@@ -1354,8 +1368,10 @@ footer{
                 img {
                     max-width: 100%;
                     height: auto;
-                }
+                    max-height: 90px;
+                 }
     }
+} 
 }
 
 .stats_section.edr {
@@ -1392,11 +1408,97 @@ footer{
     max-width: 100%;
 }
 
+
+/********** Privacy policy *********/
+.privacy_p_content{
+    border-top: 1px solid #ebebeb;
+    margin-top: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    .prv_block{
+
+        margin: 30px 0;
+    }
+
+    h2{
+        font-size: 20px;
+        font-weight: 600;
+        color: #202020;
+    }
+    h3{
+        font-size: 18px;
+        font-weight: 600;
+        color: #202020;
+    }
+    h4{
+        font-size: 16px;
+        font-weight: 600;
+        color: #202020;
+    }
+}
+.privacy_p{
+
+    margin-top: 100px;
+
+    .in_page_text, .in_page_img{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .in_page_img img{
+        max-height: 320px;
+        max-width: 100%;
+    }
+
+}
+.main_head{
+
+    h2{
+    font-size: 45px;
+    color: #202020;
+    font-weight: 700;
+
+    .end_not{
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        display: inline-block;
+        background: $secondary-color;
+        position: relative;
+        top: 1px;
+        margin-left: 3px;
+    }
+    }
+
+   h5{
+    font-size: 18px;
+    color: #4d4d4d;
+    font-weight: 500;
+   }
+}
+/********** Privacy policy *********/
+
+
+
 /********** Responsive **************/
 
 
 
 @media(max-width:767px){
+
+    .tip_model{
+        right: 6px;
+        top: 185px;
+
+        &::after{
+            bottom: 88px;
+            left: 155px;
+            transform: rotate(306deg);
+        }
+    }
 
     .navbar{
         padding: 2px 0;
@@ -1665,7 +1767,7 @@ footer{
         margin-top: 30px;
     }
     .landing_main_head {
-        font-size: 2.1rem;
+        font-size: 3rem;
         padding: 0;
     }
 
@@ -1693,12 +1795,13 @@ footer{
     .hero_slider {
 
         .video_sec{
-            height: 270px;
+            height: 275px;
         }
         .col-md-12 .l_main_heading{
             min-height:0;
             text-align: center;
             margin-top: 20px;
+            height: auto !important;
         }
 
         .button_grp{

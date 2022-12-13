@@ -1,7 +1,52 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/montserrat/Montserrat-Black.ttf") format("truetype");
+  font-weight: 900;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/montserrat/Montserrat-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/montserrat/Montserrat-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/montserrat/Montserrat-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/montserrat/Montserrat-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/montserrat/Montserrat-Light.ttf") format("truetype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/montserrat/Montserrat-Medium.ttf") format("truetype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/montserrat/Montserrat-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/montserrat/Montserrat-Thin.ttf") format("truetype");
+  font-weight: 100;
+}
 /**** Immersify Web Platform Common Styles******/
 /********* Common **********/
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat";
 }
 
 /**** Breadcrumb *****/
@@ -2041,6 +2086,12 @@ span.error_txt {
 }
 .quiz_modal .mcq_data ul .wrong_ans button {
   background-color: #FFCFCF !important;
+  -webkit-animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+          animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  perspective: 1000px;
 }
 .quiz_modal .mcq_data ul .wrong_ans button:after {
   content: "\f00d";
@@ -2049,6 +2100,34 @@ span.error_txt {
   position: absolute;
   right: 20px;
   color: #dd6d6d;
+}
+@-webkit-keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
 }
 .quiz_modal .mcq_submit {
   margin: 20px;
@@ -3424,7 +3503,6 @@ span.error_txt {
 }
 .coming_soon span {
   font-size: 11px;
-  margin-left: 27px;
   margin-bottom: 6px;
   display: inline-block;
   font-weight: 700;
@@ -3458,6 +3536,82 @@ span.error_txt {
 .lesson_block {
   padding: 30px 5px 30px 20px;
   height: 100%;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.video_deer {
+  position: absolute;
+  z-index: 99999;
+  top: 20%;
+  left: 0px;
+  height: 600px;
+  width: 100%;
+  animation: linear;
+  -webkit-animation: linear;
+  -webkit-animation-name: run;
+  -webkit-animation-duration: 16s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+.video_deer img {
+  height: 100%;
+  max-width: 100%;
+}
+
+@keyframes run {
+  0% {
+    left: -100%;
+  }
+  50% {
+    left: 100%;
+  }
+  100% {
+    left: 100%;
+    visibility: hidden;
+    display: none;
+  }
+}
+@-webkit-keyframes run {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: 100%;
+  }
+  100% {
+    left: 100%;
+    display: none;
+  }
+}
+.redirect_sec {
+  height: calc(100% - 92px);
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.redirect_sec h3 {
+  margin-bottom: 20px;
+}
+.redirect_sec .loader_dir {
+  margin-bottom: 30px;
+}
+.redirect_sec .loader_dir img {
+  height: 60px;
+}
+.redirect_sec p {
+  max-width: 400px;
+  text-align: center;
+}
+.redirect_sec .btn_underline {
+  max-width: 82px;
+  padding: 0;
+  text-align: center;
+  font-weight: 500;
+  margin-left: 10px;
 }
 
 h2.main_heading {
@@ -3655,6 +3809,56 @@ h2.main_heading {
 }
 
 /******* Lessons Video Animation ***********/
+.add_quiz .quiz_starter {
+  opacity: 1;
+  pointer-events: all;
+  visibility: visible;
+  bottom: -7px;
+}
+.add_quiz .slider_num {
+  position: relative;
+  top: 66px;
+  pointer-events: none;
+  transition: 0.2s all ease;
+}
+.add_quiz .std_wrap .slick-next, .add_quiz .std_wrap .slick-prev {
+  bottom: -130px;
+  transition: 0.2s all ease;
+}
+
+.quiz_starter {
+  min-height: 60px;
+  display: flex;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  width: 100%;
+  background: #346eba;
+  position: absolute;
+  bottom: 50px;
+  transition: 0.2s all ease;
+  align-items: center;
+  justify-content: center;
+}
+.quiz_starter p {
+  padding-left: 15px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+.quiz_starter .btn_sm_quiz {
+  height: 40px;
+  width: 100px;
+  background: #fff;
+  border-radius: 3px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #346eba;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
 .error_blk {
   position: relative;
   background: #f1c72e;
@@ -3793,6 +3997,7 @@ h2.main_heading {
     padding-left: 15px;
     border-left: none;
     border-top: 1px solid #EBEBEB;
+    margin-top: 75px;
   }
   .animation_player .text_exp {
     margin: 10px;

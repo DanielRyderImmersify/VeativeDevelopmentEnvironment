@@ -105,6 +105,10 @@ a.btn_common {
   position: relative;
   min-height: 500px;
 }
+.video_sec .thumbnail_modl {
+  position: absolute;
+  z-index: 0;
+}
 .video_sec .landing_model {
   position: absolute;
   height: 100%;
@@ -183,7 +187,6 @@ a.btn_common {
   margin-top: 100px;
 }
 .hero_slider .l_main_heading {
-  min-height: 600px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -780,10 +783,12 @@ section.what_prof .prof_blk .ext_link img {
   height: 100%;
   width: 100%;
   transition: 0.2s all ease;
+  pointer-events: none;
 }
 .academic_areas .academic_sub .tab-content > .active {
   display: block;
   opacity: 1;
+  pointer-events: all;
 }
 .academic_areas .academic_sub .nav-item {
   margin: 0;
@@ -1178,12 +1183,16 @@ footer .ft_block.social_m ul li i {
   text-align: center;
   transition: 0.2s all ease;
 }
-.customers .p_img:hover {
+.customers .p_img a {
+  display: inline-block;
+}
+.customers .p_img a:hover {
   transform: scale(1.03, 1.03);
 }
-.customers .p_img img {
+.customers .p_img a img {
   max-width: 100%;
   height: auto;
+  max-height: 90px;
 }
 
 .stats_section.edr {
@@ -1214,8 +1223,79 @@ footer .ft_block.social_m ul li i {
   max-width: 100%;
 }
 
+/********** Privacy policy *********/
+.privacy_p_content {
+  border-top: 1px solid #ebebeb;
+  margin-top: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.privacy_p_content .prv_block {
+  margin: 30px 0;
+}
+.privacy_p_content h2 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #202020;
+}
+.privacy_p_content h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #202020;
+}
+.privacy_p_content h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #202020;
+}
+
+.privacy_p {
+  margin-top: 100px;
+}
+.privacy_p .in_page_text, .privacy_p .in_page_img {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.privacy_p .in_page_img img {
+  max-height: 320px;
+  max-width: 100%;
+}
+
+.main_head h2 {
+  font-size: 45px;
+  color: #202020;
+  font-weight: 700;
+}
+.main_head h2 .end_not {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: inline-block;
+  background: #9A39EA;
+  position: relative;
+  top: 1px;
+  margin-left: 3px;
+}
+.main_head h5 {
+  font-size: 18px;
+  color: #4d4d4d;
+  font-weight: 500;
+}
+
+/********** Privacy policy *********/
 /********** Responsive **************/
 @media (max-width: 767px) {
+  .tip_model {
+    right: 6px;
+    top: 185px;
+  }
+  .tip_model::after {
+    bottom: 88px;
+    left: 155px;
+    transform: rotate(306deg);
+  }
   .navbar {
     padding: 2px 0;
   }
@@ -1426,7 +1506,7 @@ footer .ft_block.social_m ul li i {
     margin-top: 30px;
   }
   .landing_main_head {
-    font-size: 2.1rem;
+    font-size: 3rem;
     padding: 0;
   }
   .stats_section .stats_wrap {
@@ -1446,12 +1526,13 @@ footer .ft_block.social_m ul li i {
     margin-bottom: 150px;
   }
   .hero_slider .video_sec {
-    height: 270px;
+    height: 275px;
   }
   .hero_slider .col-md-12 .l_main_heading {
     min-height: 0;
     text-align: center;
     margin-top: 20px;
+    height: auto !important;
   }
   .hero_slider .button_grp {
     align-items: center;
