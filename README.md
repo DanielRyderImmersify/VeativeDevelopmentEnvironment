@@ -93,7 +93,7 @@ Everything should be responsive and tested in various devices.<br/>
 Use SCSS only for styling.<br />
 You can use https://marketplace.visualstudio.com/items?itemName=glenn2223.live-sass for compiling SCSS files.<br/>
 Do not edit/delete any existing stylesheets(both CSS&SCSS).<br />
-Add all your styles to Veativestyle.scss, you can import common stylesheets.<br />
+Add all your styles to Veativestyle.scss, you can import common stylesheets(common.scss, colors.scss, fonts_import.scss etc).<br />
 If you need to add any reusable CSS component, add it to the `common.scss` file with comment<br/>
 Use proper classnames which are relevant to the components.<br />
 Add comments on starting and ending of each styling sections for easy understanding.
