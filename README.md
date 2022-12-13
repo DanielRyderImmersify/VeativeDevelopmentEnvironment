@@ -85,6 +85,7 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 ## HTML
 Use semantic HTML for markups.<br/>
+Add comments on starting and ending of each sections<br/>
 Add `alt` tag for all `img` components.<br/>
 Bootstrap 5 is used for responsive framework, you can use Bootstrap classes if you want.<br/>
 Everything should be responsive and tested in various devices.<br/>
