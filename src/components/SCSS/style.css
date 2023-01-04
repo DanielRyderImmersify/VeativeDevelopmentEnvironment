@@ -43,8 +43,8 @@
   src: url("../fonts/montserrat/Montserrat-Thin.ttf") format("truetype");
   font-weight: 100;
 }
-/**** Immersify Web Platform Common Styles******/
-/********* Common **********/
+/*** Main colours used ***/
+/*** Main colours used ***/
 body {
   font-family: "Montserrat";
 }
@@ -95,6 +95,7 @@ body {
 }
 
 /**** Breadcrumb *****/
+/****** Form Controls *****/
 .form-check {
   margin-bottom: 5px;
 }
@@ -152,6 +153,8 @@ body {
   font-size: 14px;
 }
 
+/****** Form Controls *****/
+/*** Buttons and Links ****/
 .dropdown .dropdown-toggle {
   font-size: 14px;
   color: #AEAEAE;
@@ -213,11 +216,6 @@ body {
   background-color: #77a3fa;
   background-size: 100%;
   transition: background 0s;
-}
-
-.right-head {
-  position: relative;
-  z-index: 9;
 }
 
 @-webkit-keyframes pulse-black {
@@ -383,17 +381,43 @@ button, a {
   text-decoration: none;
 }
 
+button {
+  border: none;
+  background: none;
+}
+
+/*** Buttons and Links ****/
+/****** Headings and Text ****/
+h2.main_heading {
+  font-size: 24px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  color: #202020;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+p {
+  color: #6D6D6D;
+}
+
+/****** Headings and Text ****/
+/**** Immersify Web Platform Common Styles******/
+/*** Main colours used ***/
+/*** Main colours used ***/
+/**** Immersify Web Platform Common Styles******/
+.right-head {
+  position: relative;
+  z-index: 9;
+}
+
 .main_area {
   padding-left: 250px;
   padding-top: 96px;
   min-height: 100vh;
   background-color: #F7F8FA;
   transition: 0.4s all ease;
-}
-
-button {
-  border: none;
-  background: none;
 }
 
 .main_topics {
@@ -589,15 +613,6 @@ button {
   background: linear-gradient(to top, #222222, transparent);
 }
 
-.modal-backdrop {
-  z-index: 9999 !important;
-}
-
-.modal {
-  z-index: 99999 !important;
-}
-
-/********* Common **********/
 /********* Profile **********/
 .frgt_pd img {
   height: 140px;
@@ -620,7 +635,7 @@ button {
 
 .confirmation_popup .bottom_btns {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   padding: 10px;
 }
 .confirmation_popup .bottom_btns button {
@@ -3551,7 +3566,9 @@ body {
   width: 100%;
   animation: linear;
   -webkit-animation: linear;
+  animation-name: run;
   -webkit-animation-name: run;
+  animation-duration: 16s;
   -webkit-animation-duration: 16s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
@@ -3612,16 +3629,6 @@ body {
   text-align: center;
   font-weight: 500;
   margin-left: 10px;
-}
-
-h2.main_heading {
-  font-size: 24px;
-  font-weight: 700;
-  display: flex;
-  align-items: center;
-  color: #202020;
-  margin-bottom: 20px;
-  position: relative;
 }
 
 .animation_player {

@@ -1,3 +1,9 @@
+/*** Main colours used ***/
+/*** Main colours used ***/
+body {
+  font-family: "Montserrat";
+}
+
 /**** Breadcrumb *****/
 .breadcrumb_des {
   padding: 5px 15px;
@@ -43,4 +49,312 @@
   text-align: left;
 }
 
-/**** Breadcrumb *****//*# sourceMappingURL=common.css.map */
+/**** Breadcrumb *****/
+/****** Form Controls *****/
+.form-check {
+  margin-bottom: 5px;
+}
+.form-check .form-check-input:checked {
+  background-color: #346eba;
+  border-color: #346eba;
+}
+.form-check .form-check-input {
+  border-radius: 2px;
+  height: 1.3rem;
+  width: 1.3rem;
+  box-shadow: none;
+}
+.form-check label {
+  margin-top: 4px;
+  margin-left: 5px;
+  font-size: 14px;
+  color: #919191;
+}
+
+.form-group .form-control {
+  height: 47px;
+  color: #919191;
+  font-size: 14px;
+}
+.form-group .form-control.name:valid, .form-group .form-control.email:valid, .form-group .form-control.pwd:valid {
+  border-color: #346eba;
+}
+.form-group .form-control:focus {
+  border-color: #346eba;
+  outline: none !important;
+  box-shadow: none;
+}
+.form-group ::-moz-placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #919191;
+  opacity: 1; /* Firefox */
+  font-size: 14px;
+}
+.form-group :-ms-input-placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #919191;
+  opacity: 1; /* Firefox */
+  font-size: 14px;
+}
+.form-group ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #919191;
+  opacity: 1; /* Firefox */
+  font-size: 14px;
+}
+.form-group :-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #919191;
+  font-size: 14px;
+}
+.form-group ::-ms-input-placeholder { /* Microsoft Edge */
+  color: #919191;
+  font-size: 14px;
+}
+
+/****** Form Controls *****/
+/*** Buttons and Links ****/
+.dropdown .dropdown-toggle {
+  font-size: 14px;
+  color: #AEAEAE;
+}
+
+.btn_underline {
+  font-size: 16px;
+  color: #346eba;
+  border-bottom: 1px solid #346eba;
+}
+.btn_underline:hover {
+  color: #5089fa;
+  border-color: #5089fa;
+}
+
+.btn_grey {
+  background: #cbcbcb;
+  border: none;
+  height: 45px;
+  padding: 10px 25px;
+  border-radius: 3px;
+  color: #fff;
+  font-weight: 470;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  background-position: center;
+  transition: background 0.8s;
+}
+
+.btn_readmore {
+  display: inline-block;
+  padding: 0;
+  color: #346eba;
+}
+
+.btn_common {
+  background: #346eba;
+  border: none;
+  min-height: 45px;
+  padding: 10px 25px;
+  border-radius: 3px;
+  color: #fff;
+  font-weight: 470;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  background-position: center;
+  transition: background 0.8s;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.btn_common:hover {
+  background: #5089fa radial-gradient(circle, transparent 1%, #5089fa 1%) center/14700%;
+}
+.btn_common:active {
+  background-color: #77a3fa;
+  background-size: 100%;
+  transition: background 0s;
+}
+
+@-webkit-keyframes pulse-black {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(1, 76, 187, 0.7);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(82, 1, 187, 0);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(1, 76, 187, 0);
+  }
+}
+
+@keyframes pulse-black {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(1, 76, 187, 0.7);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(82, 1, 187, 0);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(1, 76, 187, 0);
+  }
+}
+.pulse {
+  -webkit-animation: pulse-black 2s infinite;
+          animation: pulse-black 2s infinite;
+}
+
+.ripple {
+  margin: auto;
+  background-color: rgba(10, 10, 10, 0);
+  width: 130px;
+  height: 45px;
+  border-radius: 3px;
+  display: block;
+  -webkit-animation: ripple 3s linear infinite;
+          animation: ripple 3s linear infinite;
+  position: absolute;
+  right: 0px;
+}
+
+.ripple::before, .ripple::after {
+  content: "";
+  -webkit-animation: inherit;
+          animation: inherit;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  position: absolute;
+  right: 10px;
+  width: 110px;
+  height: 45px;
+  border-radius: 3px;
+  display: block;
+  top: 0px;
+}
+
+.ripple::after {
+  -webkit-animation-delay: 2.2s;
+          animation-delay: 2.2s;
+}
+
+@-webkit-keyframes ripple {
+  0% {
+    box-shadow: 0 0 0 0.35rem rgba(151, 193, 255, 0.3);
+  }
+  100% {
+    box-shadow: 0 0 0 3rem rgba(255, 255, 255, 0);
+  }
+}
+
+@keyframes ripple {
+  0% {
+    box-shadow: 0 0 0 0.35rem rgba(151, 193, 255, 0.3);
+  }
+  100% {
+    box-shadow: 0 0 0 3rem rgba(255, 255, 255, 0);
+  }
+}
+.glow-on-hover {
+  overflow: visible !important;
+}
+
+.glow-on-hover::after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  border: 6px solid #00FFCB;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-animation: ring 1.5s infinite;
+          animation: ring 1.5s infinite;
+}
+
+@-webkit-keyframes ring {
+  0% {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+  }
+  100% {
+    width: 300px;
+    height: 300px;
+    opacity: 0;
+  }
+}
+
+@keyframes ring {
+  0% {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+  }
+  100% {
+    width: 300px;
+    height: 300px;
+    opacity: 0;
+  }
+}
+.btn_success {
+  background: #28AD4E;
+  border: none;
+  height: 45px;
+  padding: 10px 25px;
+  border-radius: 3px;
+  color: #fff;
+  font-weight: 470;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  background-position: center;
+  transition: background 0.8s;
+}
+.btn_success::after {
+  content: "\f00c";
+  color: #ffffff;
+  font: normal normal normal 18px/1 FontAwesome;
+  margin-left: 5px;
+}
+.btn_success:hover {
+  background: #3ac762 radial-gradient(circle, transparent 1%, #3ac762 1%) center/14700%;
+}
+.btn_success:active {
+  background-color: #31b155;
+  background-size: 100%;
+  transition: background 0s;
+}
+
+button, a {
+  transition: 0.2s all ease;
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  background: none;
+}
+
+/*** Buttons and Links ****/
+/****** Headings and Text ****/
+h2.main_heading {
+  font-size: 24px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  color: #202020;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+p {
+  color: #6D6D6D;
+}
+
+/****** Headings and Text ****//*# sourceMappingURL=common.css.map */

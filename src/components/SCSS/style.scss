@@ -1,7 +1,11 @@
 /**** Immersify Web Platform Common Styles******/ 
 @use 'fonts_import.scss';
-@use 'colors.scss';
 @use 'common.scss';
+/*** Main colours used ***/
+$primary-color : #346eba;
+$hover-color :#5089fa ;
+$secondary-color : #9A39EA;
+/*** Main colours used ***/
 /**** Immersify Web Platform Common Styles******/ 
 
 .right-head{
@@ -210,7 +214,7 @@
 
     .bottom_btns {
         display: flex;
-        justify-content: end;
+        justify-content: flex-end;
         padding: 10px;
         
         button{
@@ -3481,7 +3485,9 @@ body{
     width: 100%;
     animation:linear;
     -webkit-animation: linear;
+    animation-name:run;
     -webkit-animation-name: run;
+    animation-duration:16s;
     -webkit-animation-duration: 16s;
     animation-fill-mode: forwards;
 

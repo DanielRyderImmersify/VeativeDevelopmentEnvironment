@@ -203,7 +203,7 @@ a.btn_common{
     text-align: right;
     display: flex;
     align-items: center;
-    justify-content: end;
+    justify-content: flex-end;
 
     button{
         min-width: 120px;
@@ -963,6 +963,7 @@ section.what_prof {
 .join_btn_insta{
     background: linear-gradient(to right, #624CC5, #DB2C74, #EA8631);
     -webkit-background-clip: text;
+    background-clip: text;
     font-weight: 600;
     -webkit-text-fill-color: transparent;
     border-image: linear-gradient(#624CC5, #DB2C74, #EA8631) 9;
