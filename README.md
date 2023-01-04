@@ -85,15 +85,17 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 ## HTML
 Use semantic HTML for markups.<br/>
+Add comments on starting and ending of each sections<br/>
 Add `alt` tag for all `img` components.<br/>
 Bootstrap 5 is used for responsive framework, you can use Bootstrap classes if you want.<br/>
 Everything should be responsive and tested in various devices.<br/>
 
 ## Styling
-Use SCSS for styling.<br />
+Use SCSS only for styling.<br />
 You can use https://marketplace.visualstudio.com/items?itemName=glenn2223.live-sass for compiling SCSS files.<br/>
 Do not edit/delete any existing stylesheets(both CSS&SCSS).<br />
-Use separate stylesheets for any styling but can import common stylesheets.<br />
+Add all your styles to Veativestyle.scss, you can import common stylesheets(common.scss, colors.scss, fonts_import.scss etc).<br />
+If you need to add any reusable CSS component, add it to the `common.scss` file with comment<br/>
 Use proper classnames which are relevant to the components.<br />
 Add comments on starting and ending of each styling sections for easy understanding.
 
